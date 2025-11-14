@@ -1,6 +1,8 @@
 plugins {
-    alias(libs.plugins.kotlin.jvm)
     `java-library`
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.spockk)
+    alias(libs.plugins.kotlin.power.assert)
 }
 
 repositories {
@@ -8,15 +10,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
-
-    testImplementation(libs.junit.jupiter.engine)
-
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-
-    api(libs.commons.math3)
-
-    implementation(libs.guava)
+    testImplementation(libs.spockk.core)
+    testRuntimeOnly(libs.junit.platform.launcher)
 }
 
 java {

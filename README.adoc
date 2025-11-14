@@ -1,0 +1,17 @@
+== Spockk Framework Example Project
+
+The purpose of this project is to help you get started with Spock. The project includes example specifications and build scripts for Gradle. It also makes it easy to create an IDEA project, allowing you to run the example specs from within your IDE.
+
+=== Building with Gradle
+
+`./gradlew clean test`
+
+=== Creating an IDEA project
+
+1. Open the project directory with IntelliJ IDEA and it should auto-detect the project settings.
+2. Install the "Spockk" IntelliJ plugin from Jetbrains Marketplace to benefit from syntax highlighting and test execution from within your IDE.
+
+=== Further Resources
+
+* https://pshevche.github.io/spockk[Spock homepage]
+* https://github.com/pshevche/spockk[Spock repository]

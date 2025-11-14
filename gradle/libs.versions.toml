@@ -1,12 +1,12 @@
 [versions]
-commons-math3 = "3.6.1"
-guava = "33.4.6-jre"
-junit-jupiter-engine = "5.12.1"
+kotlin = "2.2.20"
+spockk = "0.1.0"
 
 [libraries]
-commons-math3 = { module = "org.apache.commons:commons-math3", version.ref = "commons-math3" }
-guava = { module = "com.google.guava:guava", version.ref = "guava" }
-junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter-engine" }
+spockk-core = { module = "io.github.pshevche.spockk:spockk-core", version.ref = "spockk" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version = "6.0.1" }
 
 [plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.2.20" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-power-assert = { id = "org.jetbrains.kotlin.plugin.power-assert", version.ref = "kotlin" }
+spockk = { id = "io.github.pshevche.spockk", version.ref = "spockk" }
