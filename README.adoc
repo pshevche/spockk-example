@@ -2,6 +2,10 @@
 
 The purpose of this project is to help you get started with Spock. The project includes example specifications and build scripts for Gradle. It also makes it easy to create an IDEA project, allowing you to run the example specs from within your IDE.
 
+=== Prerequisites
+
+- JDK 21 or higher
+
 === Building with Gradle
 
 `./gradlew clean test`
