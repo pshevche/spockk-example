@@ -17,5 +17,5 @@ The purpose of this project is to help you get started with Spock. The project i
 
 === Further Resources
 
-* https://pshevche.github.io/spockk[Spock homepage]
-* https://github.com/pshevche/spockk[Spock repository]
+* https://pshevche.github.io/spockk[Spockk homepage]
+* https://github.com/pshevche/spockk[Spockk repository]
