@@ -13,6 +13,8 @@ repositories {
 }
 
 dependencies {
+    testImplementation(kotlin("test"))
+    testImplementation(libs.spock.core)
     testImplementation(libs.spockk.core)
     testRuntimeOnly(libs.junit.platform.launcher)
 }
