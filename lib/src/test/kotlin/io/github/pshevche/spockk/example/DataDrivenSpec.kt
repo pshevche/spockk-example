@@ -37,6 +37,9 @@ class DataDrivenSpec : Specification() {
         assertEquals("Hello, ${being.name}!", greeting)
 
         where
-        variables(species, being).from(listOf("vulcan", "human"), listOf(Vulcan("Spock"), Human("Scotty")))
+        variables(species, being).from(
+            listOf("vulcan", "human"),
+            listOf(Vulcan("Spock"), Human("Scotty"))
+        )
     }
 }
