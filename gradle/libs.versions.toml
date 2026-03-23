@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.3.20"
-spockk = "0.3.1"
+spockk = "0.3.2"
 
 [libraries]
 spock-core = { module = "org.spockframework:spock-core", version = "2.4-groovy-5.0" }
