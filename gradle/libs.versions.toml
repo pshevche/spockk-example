@@ -4,7 +4,7 @@ spockk = "0.4.1"
 
 [libraries]
 spockk-core = { module = "io.github.pshevche.spockk:spockk-core", version.ref = "spockk" }
-junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version = "6.1.2" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version = "6.1.3" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
