@@ -8,7 +8,6 @@ import io.github.pshevche.spockk.lang.`when`
 import io.github.pshevche.spockk.lang.where
 import spock.lang.Specification
 import spock.lang.Unroll
-import kotlin.test.assertEquals
 
 class DataDrivenSpec : Specification() {
 
@@ -17,7 +16,7 @@ class DataDrivenSpec : Specification() {
         val spock = Vulcan("Spock")
 
         expect
-        assertEquals("Live long and prosper, ${being.name}!", spock.greet(being))
+        spock.greet(being) == "Live long and prosper, ${being.name}!"
 
         where
         species  ; being
@@ -34,7 +33,7 @@ class DataDrivenSpec : Specification() {
         val greeting = kirk.greet(being)
 
         then
-        assertEquals("Hello, ${being.name}!", greeting)
+        greeting == "Hello, ${being.name}!"
 
         where
         variables(species, being).from(

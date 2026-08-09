@@ -15,7 +15,7 @@ class BasicUsage : Specification() {
         assertEquals("Spock", Vulcan("Spock").name)
 
         and
-        assertEquals("Kirk", Human("Kirk").name)
+        Human("Kirk").name == "Kirk"
     }
 
     fun `spock greets kirk properly`() {
@@ -29,6 +29,6 @@ class BasicUsage : Specification() {
         val greeting = spock.greet(kirk)
 
         then("greeting is legendary")
-        assertEquals("Live long and prosper, Kirk!", greeting)
+        greeting == "Live long and prosper, Kirk!"
     }
 }
