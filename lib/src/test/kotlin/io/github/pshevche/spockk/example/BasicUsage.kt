@@ -6,13 +6,12 @@ import io.github.pshevche.spockk.lang.given
 import io.github.pshevche.spockk.lang.then
 import io.github.pshevche.spockk.lang.`when`
 import spock.lang.Specification
-import kotlin.test.assertEquals
 
 class BasicUsage : Specification() {
 
     fun `all beings have names`() {
         expect
-        assertEquals("Spock", Vulcan("Spock").name)
+        Vulcan("Spock").name == "Spock"
 
         and
         Human("Kirk").name == "Kirk"
