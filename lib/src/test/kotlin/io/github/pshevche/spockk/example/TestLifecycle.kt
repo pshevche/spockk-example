@@ -27,7 +27,7 @@ class TestLifecycle : Specification() {
         ussEnterprise.check("engineering")
 
         then
-        assert(ussEnterprise.checks.size == 2)
+        ussEnterprise.checks.size == 2
 
         cleanup
         ussEnterprise.reset()
@@ -40,7 +40,7 @@ class TestLifecycle : Specification() {
         ussEnterprise.check("security")
 
         then
-        assert(ussEnterprise.checks.size == 3)
+        ussEnterprise.checks.size == 3
 
         cleanup
         ussEnterprise.reset()

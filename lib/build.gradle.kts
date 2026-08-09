@@ -1,11 +1,7 @@
-@file:OptIn(ExperimentalKotlinGradlePluginApi::class)
-import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
-
 plugins {
     `java-library`
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.spockk)
-    alias(libs.plugins.kotlin.power.assert)
 }
 
 repositories {
@@ -13,7 +9,6 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
     testImplementation(libs.spockk.core)
     testRuntimeOnly(libs.junit.platform.launcher)
 }
@@ -26,16 +21,4 @@ java {
 
 tasks.named<Test>("test") {
     useJUnitPlatform()
-}
-
-powerAssert {
-    functions =
-        setOf(
-            "kotlin.test.assertContains",
-            "kotlin.test.assertEquals",
-            "kotlin.test.assertFalse",
-            "kotlin.test.assertNotNull",
-            "kotlin.test.assertTrue"
-        )
-    includedSourceSets = setOf("test")
 }
