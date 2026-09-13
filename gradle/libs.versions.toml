@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.4.20"
-spockk = "0.5.1"
+spockk = "0.6.0"
 
 [libraries]
 spockk-core = { module = "io.github.pshevche.spockk:spockk-core", version.ref = "spockk" }
